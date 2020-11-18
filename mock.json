@@ -1,0 +1,88 @@
+{ 
+  "activities": [
+    {
+      "id": 7,
+      "name": "Ateneum",
+      "desc": "Vieraile Ateneumissa",
+      "isCompleted": false,
+      "category": {
+        "categoryId": 1,
+        "name": "Museot"
+      },
+      "city": {
+        "cityId": 4,
+        "name": "Helsinki"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Suomenlinna",
+      "desc": "Lautalla Suomenlinnaan",
+      "isCompleted": true,
+      "category": {
+        "categoryId": 1,
+        "name": "Museot"
+      },
+      "city": {
+        "cityId": 4,
+        "name": "Helsinki"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Sompasauna",
+      "desc": "Sompasauna kalasatamassa",
+      "isCompleted": false,
+      "category": {
+        "categoryId": 3,
+        "name": "Elämykset"
+      },
+      "city": {
+        "cityId": 4,
+        "name": "Helsinki"
+      }
+    },
+    {
+      "id": 10,
+      "name": "Ateneum",
+      "desc": "Vieraile Ateneumissa",
+      "isCompleted": false,
+      "category": {
+        "categoryId": 1,
+        "name": "Museot"
+      },
+      "city": {
+        "cityId": 4,
+        "name": "Helsinki"
+      }
+    },
+    {
+      "id": 11,
+      "name": "Suomenlinna",
+      "desc": "Lautalla Suomenlinnaan",
+      "isCompleted": true,
+      "category": {
+        "categoryId": 1,
+        "name": "Museot"
+      },
+      "city": {
+        "cityId": 4,
+        "name": "Helsinki"
+      }
+    },
+    {
+      "id": 12,
+      "name": "Sompasauna",
+      "desc": "Sompasauna kalasatamassa",
+      "isCompleted": false,
+      "category": {
+        "categoryId": 3,
+        "name": "Elämykset"
+      },
+      "city": {
+        "cityId": 4,
+        "name": "Helsinki"
+      }
+    }
+  ]
+}
