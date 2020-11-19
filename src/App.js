@@ -21,6 +21,8 @@ function App() {
   const [filtered, setFiltered] = useState('');
 
   useEffect(() => {
+    
+    //fetch("http://localhost:8080/activities")
     fetch("https://explore-finland.herokuapp.com/activities")
       .then(res => res.json())
       .then(response => {
@@ -32,16 +34,17 @@ function App() {
         }
       )
     
-      fetch("https://explore-finland.herokuapp.com/cities")
-        .then(res => res.json())
-        .then(response => {
-            console.log("cities", response)
-            setCities(response)
-          },
-          (error) => {
-            console.log(error)
-          }
-        )
+    //fetch("http://localhost:8080/cities")  
+    fetch("https://explore-finland.herokuapp.com/cities")
+      .then(res => res.json())
+      .then(response => {
+          console.log("cities", response)
+          setCities(response)
+        },
+        (error) => {
+          console.log(error)
+        }
+      )
   }, [])
 
   const handleChange = (event) => {
@@ -49,7 +52,14 @@ function App() {
     console.log('filtered', filtered)
 
     if(event.target.value !== "all") {
-      setFiltered(activities.filter(activity =>  activity.city.name === event.target.value))
+      let muuttuja = activities.filter(activity => {
+        if(activity.city === null) {
+          return null
+        } else {
+          return activity.city.name === event.target.value
+        }
+      })
+      setFiltered(muuttuja)
     } else {
        setFiltered('')
     }
